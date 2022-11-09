@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #navbar1 {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        gap: 5px;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #e42529;
+        color: white;
+        font-family: Roboto, "system-ui", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      #second_navbar {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        background-color: #e42529;
+        align-items: center;
+      }
+      #second_navbar > div > img {
+        margin-left: 50px;
+      }
+      #second_navbar > div + div > input[type="text"] {
+        width: 500px;
+        padding: 12px 20px;
+        /* margin: 8px 0; */
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        /* box-sizing: border-box; */
+        font-size: large;
+      }
+      #second_navbar > div + div > span {
+        margin-left: -8%;
+      }
+      .fa-magnifying-glass {
+        font-size: large;
+        color: rgb(190, 186, 186);
+      }
+
+      #child_third_nav {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #e42529;
+        color: white;
+        font-family: Roboto, "system-ui", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      @media all and (min-width: 600px) and (max-width: 1000px) {
+       
+        #second_navbar {
+          flex-direction: column;
+          background-color: #e42529;
+          height: auto;
+        }
+        #second_navbar > div > img {
+          margin-left: 25px;
+          height: 60px;
+        }
+        #second_navbar > div + div > input[type="text"] {
+          width: 500px;
+          height: 30px;
+          padding: 10px 18px;
+          font-size: large;
+          margin-bottom: 10px;
+        }
+        #second_navbar > div + div > span {
+          margin-left: -8%;
+        }
+        #child_third_nav {
+          margin-bottom: 10px;
+        }
+      }
+      /* @media all and (min-width:320px) and (max-width:599px){
+            #navbar1{
+                display: flex;
+            gap: 5px;
+            justify-content: flex-end;
+            flex-direction: column;
+            }
+           
+        } */
+      @media all and (min-width: 320px) and (max-width: 599px) {
+       
+        #second_navbar {
+          flex-direction: column;
+          background-color: #e42529;
+          height: auto;
+        }
+        #second_navbar > div > img {
+          margin-left: 25px;
+          height: 50px;
+        }
+        #second_navbar > div + div > input[type="text"] {
+          width: 350px;
+          height: 30px;
+          padding: 10px 18px;
+          font-size: large;
+          height: auto;
+          margin-bottom: 10px;
+        }
+        #second_navbar > div + div > span {
+          margin-left: -8%;
+        }
+        #child_third_nav {
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar1">
+      <p><i class="fa-solid fa-location-dot"></i> &nbsp; Find a store |</p>
+      <p>Buying guides |</p>
+      <p>Contact us &nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </div>
+    <div id="second_navbar">
+      <div>
+        <img
+          src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg"
+          alt=""
+        />
+      </div>
+      <div>
+        <input type="text" id="" placeholder="Find your favorite products" />
+        <span>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+      </div>
+      <div id="child_third_nav">
+        <p>Select your PIN Code |</p>
+        <p><i class="fa-solid fa-cart-shopping"></i> &nbsp; Cart |</p>
+        <p><i class="fa-solid fa-user"></i> Login &nbsp;&nbsp;&nbsp;&nbsp;</p>
+      </div>
+    </div>
+  </body>
+</html>
+<script
+  src="https://kit.fontawesome.com/9723985197.js"
+  crossorigin="anonymous"
+></script>
