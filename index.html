@@ -65,6 +65,57 @@
         font-weight: 600;
       }
 
+      #drop-down{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #003380;
+        color: white;
+        height: 40px;
+        width: 100%;
+        align-items: center;
+      }
+      #drop-down>div>button{
+        background-color: #003380;
+        border: none;
+        color: white;
+        padding: 10px;
+    
+      }
+      #drop-down>div>button:hover{
+        
+        height: 40px;
+        background-color: #e42529;
+        color: white;
+
+      }
+      
+      #realince-drop{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        position: absolute;
+        
+        background-color:#0e2e5e;
+        
+        
+       
+      }
+      #realince-child1{
+        width: auto;
+        height: auto;
+        display: flex;
+        /* justify-content: space-evenly; */
+        gap: 30px;
+        padding: 20px;
+        text-align: left;
+        float: none;
+
+      }
+      /* #realince-drop:hover #realince-child1{
+        display: block;
+      } */
+
       @media all and (min-width: 600px) and (max-width: 1000px) {
        
         #second_navbar {
@@ -128,6 +179,7 @@
     </style>
   </head>
   <body>
+    <div id="main_navbar">
     <div id="navbar1">
       <p><i class="fa-solid fa-location-dot"></i> &nbsp; Find a store |</p>
       <p>Buying guides |</p>
@@ -152,6 +204,73 @@
         <p><i class="fa-solid fa-user"></i> Login &nbsp;&nbsp;&nbsp;&nbsp;</p>
       </div>
     </div>
+    </div>
+    <div id="drop-down">
+        <div>
+            <button>MOBILES & TABLETS <i class="fa-solid fa-caret-down"></i></button>
+            
+            <div id="realince-drop">
+                <div id="realince-child1">
+                    <div>
+                        <h4>Smartphones</h4><br>
+                        <h4>Wearable Technology</h4><br>
+                        <p>Boat New Launch</p><br>
+                        <h4>Accessories</h4><br>
+                        <p>Tablet Accessories</p><br>
+                        <p>Mobile Accessories</p><br>
+                        <p>Mobile Grips & Stands</p><br>
+                        <p>Car Mobile Holders</p><br>
+                        <p>Memory Cards</p><br>
+                    
+                    </div>
+                    <div>
+                        <h4>Headphones & Headsets</h4><br>
+                        <h4>Tablets & eReaders</h4><br>
+                        <p>Every Day use Tablets below 15000</p><br>
+                        <p>Premium Tablets, Above 15001</p><br>
+                        <h4>Power Banks</h4><br>
+                        <h4>eSlates</h4><br>
+                    </div>
+                    <div>
+                        <h4>AI Learning Robots</h4>
+                    </div>
+                </div>
+                <div>
+                    <div></div>
+                    <div>
+                        <p>SMARTPHONE</p>
+                        <BUtton>BUY NOW </BUtton>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        <div>
+            <button>TELEVISONS <i class="fa-solid fa-caret-down"></i></button>
+        </div>
+        <div>
+            <button>AUDIO <i class="fa-solid fa-caret-down"></i></button>
+        </div>
+        <div>
+            <button>HOME APLIENCES <i class="fa-solid fa-caret-down"></i></button>
+        </div>
+        <div>
+            <button>COMPUTERS <i class="fa-solid fa-caret-down"></i></button>
+        </div>
+        <div>
+            <button>CAMERAS <i class="fa-solid fa-caret-down"></i></button>
+        </div>
+        <div>
+            <button>KITCKEN APLIENCES <i class="fa-solid fa-caret-down"></i></button>
+        </div>
+        <div>
+            <button>PERSONAL CARE <i class="fa-solid fa-caret-down"></i></button>
+        </div>
+        <div>
+            <button>ACCESSORIES <i class="fa-solid fa-caret-down"></i></button>
+        </div>
+    </div>
+    
   </body>
 </html>
 <script
