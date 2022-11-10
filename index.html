@@ -64,43 +64,25 @@
         font-size: 16px;
         font-weight: 600;
       }
-
-      #drop-down{
-        display: flex;
-        justify-content: space-evenly;
-        background-color: #003380;
-        color: white;
-        height: 40px;
-        width: 100%;
-        align-items: center;
-      }
-      #drop-down>div>button{
-        background-color: #003380;
-        border: none;
-        color: white;
-        padding: 10px;
+/* =================================================================================================================== */
     
-      }
-      #drop-down>div>button:hover{
-        
-        height: 40px;
-        background-color: #e42529;
-        color: white;
-
+      #first_nav_hover{
+        display: none;
       }
       
+    
       #realince-drop{
         width: 95%;
         display: flex;
         justify-content: space-between;
         border: 1px solid black;
         position: absolute;
-        
+        /* visibility: hidden; */
         background-color:#0e2e5e;
-        
-        
-       
+        /* visibility: hidden; */
+      
       }
+     
       #realince-child1{
         width: auto;
         height: auto;
@@ -176,6 +158,124 @@
           margin-bottom: 10px;
         }
       }
+      /* ===================================================================================================== */
+  
+.topnav {
+  overflow: hidden;
+  /* background-color: #333; */
+  background-color: #003380;
+        color: white;
+        /* height: 40px; */
+        /* width: 100%; */
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+  /* font-size: 17px; */
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+
+.dropdown {
+  float: left;
+   overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  align-items: center;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #e42529;
+  color: white;
+}
+
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#nav-image{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#nav-image>div>img{
+    width: 70%;
+    background-color: #0e2e5e;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
     </style>
   </head>
   <body>
@@ -205,75 +305,146 @@
       </div>
     </div>
     </div>
-    <div id="drop-down">
-        <div>
-            <button>MOBILES & TABLETS <i class="fa-solid fa-caret-down"></i></button>
-            
-            <div id="realince-drop">
-                <div id="realince-child1">
-                    <div>
-                        <h4>Smartphones</h4><br>
-                        <h4>Wearable Technology</h4><br>
-                        <p>Boat New Launch</p><br>
-                        <h4>Accessories</h4><br>
-                        <p>Tablet Accessories</p><br>
-                        <p>Mobile Accessories</p><br>
-                        <p>Mobile Grips & Stands</p><br>
-                        <p>Car Mobile Holders</p><br>
-                        <p>Memory Cards</p><br>
-                    
-                    </div>
-                    <div>
-                        <h4>Headphones & Headsets</h4><br>
-                        <h4>Tablets & eReaders</h4><br>
-                        <p>Every Day use Tablets below 15000</p><br>
-                        <p>Premium Tablets, Above 15001</p><br>
-                        <h4>Power Banks</h4><br>
-                        <h4>eSlates</h4><br>
-                    </div>
-                    <div>
-                        <h4>AI Learning Robots</h4>
-                    </div>
+
+    <!-- =============================================================================================== -->
+    <div class="topnav" id="myTopnav">
+       
+      
+        <div class="dropdown">
+          <button class="dropbtn">MOBILES & TABLETS <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+          <div > 
+               <div id="realince-drop">
+            <div id="realince-child1">
+                <div>
+                    <a>Smartphones</a><br>
+                    <a>Wearable Technology</a><br>
+                    <p>Boat New Launch</p><br>
+                    <a>Accessories</a><br>
+                    <p>Tablet Accessories</p><br>
+                    <p>Mobile Accessories</p><br>
+                    <p>Mobile Grips & Stands</p><br>
+                    <p>Car Mobile Holders</p><br>
+                    <p>Memory Cards</p><br>
+                
                 </div>
                 <div>
-                    <div></div>
-                    <div>
-                        <p>SMARTPHONE</p>
-                        <BUtton>BUY NOW </BUtton>
-                    </div>
+                    <a>Headphones & Headsets</a><br>
+                    <a>Tablets & eReaders</a><br>
+                    <p>Every Day use Tablets below 15000</p><br>
+                    <p>Premium Tablets, Above 15001</p><br>
+                    <a>Power Banks</a><br>
+                    <a>eSlates</a><br>
+                </div>
+                <div>
+                    <a>AI Learning Robots</a>
                 </div>
             </div>
-          
+            <div id="nav-image">
+                <div>
+                    
+                    <img src="https://images.hindustantimes.com/tech/img/2021/07/02/960x540/image_-_2021-05-20T084832.011_1621480715307_1623139491301_1625189985574_1625189993523.jpg" alt="">
+                </div>
+                <div>
+                    <p>SMARTPHONE</p>
+                    <BUtton>BUY NOW </BUtton>
+                </div>
+            </div>
+        </div></div>
+            
+          </div>
+        </div> 
+         <div class="dropdown">
+          <button class="dropbtn">TELEVISONS <i class="fa-solid fa-caret-down"></i></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
         </div>
-        <div>
-            <button>TELEVISONS <i class="fa-solid fa-caret-down"></i></button>
+         <div class="dropdown">
+          <button class="dropbtn">AUDIO <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
         </div>
-        <div>
-            <button>AUDIO <i class="fa-solid fa-caret-down"></i></button>
+         <div class="dropdown">
+          <button class="dropbtn">HOME APLIENCES <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
         </div>
-        <div>
-            <button>HOME APLIENCES <i class="fa-solid fa-caret-down"></i></button>
+         <div class="dropdown">
+          <button class="dropbtn">COMPUTERS <i class="fa-solid fa-caret-down"></i></button>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+         </div>
+          <div class="dropdown">
+            <button class="dropbtn">CAMERAS <i class="fa-solid fa-caret-down"></i></button>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
         </div>
-        <div>
-            <button>COMPUTERS <i class="fa-solid fa-caret-down"></i></button>
+        <div class="dropdown">
+            <button class="dropbtn">KITCHEN APPLIENCES <i class="fa-solid fa-caret-down"></i></button>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
         </div>
-        <div>
-            <button>CAMERAS <i class="fa-solid fa-caret-down"></i></button>
+        <div class="dropdown">
+            <button class="dropbtn">PERSONAL CARE <i class="fa-solid fa-caret-down"></i></button>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
         </div>
-        <div>
-            <button>KITCKEN APLIENCES <i class="fa-solid fa-caret-down"></i></button>
+        <div class="dropdown">
+            <button class="dropbtn">ACCESSORIES <i class="fa-solid fa-caret-down"></i></button>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
         </div>
-        <div>
-            <button>PERSONAL CARE <i class="fa-solid fa-caret-down"></i></button>
-        </div>
-        <div>
-            <button>ACCESSORIES <i class="fa-solid fa-caret-down"></i></button>
-        </div>
-    </div>
-    
+        <a href="#about"></a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+   
   </body>
 </html>
 <script
   src="https://kit.fontawesome.com/9723985197.js"
   crossorigin="anonymous"
 ></script>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
