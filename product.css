@@ -4,6 +4,116 @@
 }
 /* --------------------------------------------header part---------------------------------------------- */
 /* --------------------------------------------header part---------------------------------------------- */
+#head-part {
+  height: 100px;
+  width: 100%;
+  background-color: #e42529;
+  display: flex;
+}
+
+.left-head {
+  height: 100px;
+  width: 18%;
+}
+
+.middle-head {
+  height: 100px;
+  width: 40%;
+
+  margin-left: 6%;
+}
+
+.search {
+  margin-top: 40px;
+  width: 70%;
+  height: 37px;
+  border: none;
+  margin-left: 20px;
+  font-size: 16px;
+  padding-left: 16px;
+}
+.search-btn {
+  height: 37px;
+  width: 20%;
+  border: none;
+  margin-left: -4px;
+  background-color: #44adfb;
+  color: white;
+}
+
+.right-head {
+  height: 100px;
+  width: 35%;
+  margin-left: 1%;
+}
+
+.left-head > img {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  width: 150px;
+  cursor: pointer;
+}
+.top {
+  height: 44px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top ul li {
+  display: inline;
+}
+
+.top ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+.bottom {
+  height: 44px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+.bottom ul li {
+  display: inline;
+}
+.bottom ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+.right-head span {
+  color: white;
+  font-size: 20px;
+}
+/* -------------------header end----------------------------- */
+/* ---------------------navbar------------------------------------- */
+#nav-bar {
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  background-color: #1f4985;
+  align-items: center;
+  justify-content: space-around;
+}
+#nav-bar > div {
+  font-size: 13px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+#nav-bar > div:hover {
+  background-color: #e42529;
+}
 
 /* ---------------------------nav bar end--------------------------------- */
 /* ---------------------------nav bar end--------------------------------- */
@@ -309,6 +419,10 @@ img ~ p {
   margin-top: 30px;
 }
 
+/* --------------------------------------------------------------------------------- */
+
+/* Footer */
+
 #fcontainer {
   height: 500px;
   width: 100%;
@@ -447,5 +561,3 @@ hr {
   top: 22px;
   width: 180px;
 }
-
-/* --------------------------------------------------------------------------------- */
